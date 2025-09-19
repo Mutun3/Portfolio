@@ -178,11 +178,6 @@ span{
 .about-content h2{
     text-align: left;
     color:white;
-    font-size:42px;
-}
-
-.about-content h3{
-    color:white;
     font-size:62px;
 }
 
@@ -190,6 +185,180 @@ span{
     color: white;
     font-size:20px;
     margin:2em 0 3em;
+}
+
+.experience{
+    width:100%;
+    min-height:100vh;
+    background:rgba(241, 241, 241);
+    padding: 90px;
+}
+
+.exptitle{
+    text-align: center;
+    font-size:62px;
+    margin-bottom:90px;
+}
+
+.experience-content{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    gap:100px;
+    height:900px;
+}
+
+.experiencebox{
+    display:flex;
+    gap:40px;
+    background-color:orangered;
+    border-radius:8px;
+    padding: 15px;
+    width: 800px;
+    height:300px;
+}
+
+.experiencebox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #2e2e2e;
+    cursor:pointer;
+}
+
+.exptxt{
+    gap:10px;
+}
+
+.experiencebox img{
+    border-radius:50%;
+    margin-top:30px;
+    width: 150px;
+    height:150px;
+}
+
+.experiencebox h3{
+    color:black;
+    font-size: 32px;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.experiencebox h2{
+    color:black;
+    font-size: 22px;
+    margin-top:1px;
+    margin-bottom:15px;
+}
+
+
+.experiencebox p{
+    color:white;
+    font-size: 18px;
+}
+
+.project{
+    align-items: center;
+    padding:12% 8%;
+    gap: 10em;
+    background: black;
+}
+
+.projecttitle{
+    font-size:62px;
+    margin-bottom:90px;
+    color:white;
+}
+
+.project-content{
+    display:flex;
+    width:100%;
+    gap:100px;
+    height:100%;
+}
+
+.projectbox{
+    display:flex;
+    flex-direction:row-reverse;
+    background-color:white;
+    border-radius:8px;
+    gap:40px;
+    padding-left: 5%px;
+    width: 800px;
+    height:300px;
+}
+
+
+.img1{
+    width: 250px;
+    height:250px;
+}
+
+.img2{
+    width: 160px;
+    height:160px;
+    margin-top:30px;
+}
+
+
+.projectbox h3{
+    color:black;
+    font-size: 28px;
+    margin-top:60px;
+    margin-bottom:15px;
+}
+
+.projectbox p{
+    color:black;
+    font-size: 18px;
+}
+
+
+.projtxt{
+  gap: 5px;
+}
+
+.orgnfo{
+    font-style:italic;
+}
+
+.projectbox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+    cursor:pointer;
+}
+
+.skills{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    border-radius:30px;
+    gap: 10em;
+    background: orangered;
+}
+
+.skills h2{
+    margin-top:60px;
+    font-size:50px;
+    color:white;
+}
+
+.skill{
+    display:flex;
+    width:900px;
+    height:350px;
+    gap:30px;
+}
+
+.image1{
+    width:120px;
+    height:120px;
+}
+
+.skills:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px orangered;
+    cursor:pointer;
 }
 
 .contact-form h2{
