@@ -452,3 +452,216 @@ span{
     font-size: 12px;
     color:white;
 }
+
+
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .home {
+        gap: 4em;
+        padding: 30px 5% 0;
+    }
+
+    .img-box img {
+        width: 400px;
+    }
+
+    .experiencebox,
+    .projectbox {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 3em;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .home-content h3 {
+        font-size: 32px;
+    }
+
+    .img-box img {
+        width: 300px;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 4em;
+        padding: 10% 5%;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 48px;
+    }
+
+    .experience-content,
+    .project-content,
+    .skill {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        height: auto;
+    }
+
+    .experiencebox,
+    .projectbox {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experiencebox img,
+    .projectbox img {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .contact {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .exptitle,
+    .projecttitle {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .skills {
+        margin: 50px 20px;
+        padding: 30px 10px;
+    }
+
+    .skills h2 {
+        font-size: 32px;
+    }
+
+    .skill {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .image1 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-form form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .experiencebox h3 {
+        font-size: 22px;
+    }
+
+    .experiencebox h2 {
+        font-size: 18px;
+    }
+
+    .experiencebox p {
+        font-size: 14px;
+    }
+
+    .projectbox h3 {
+        font-size: 20px;
+    }
+
+    .projectbox p {
+        font-size: 14px;
+    }
+
+    .footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
