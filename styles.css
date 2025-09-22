@@ -21,6 +21,26 @@
     z-index: 100;
 }
 
+.nav-container{
+    display:none;
+}
+
+.burger{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+}
+
+.close{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+}
+
 .logo{
     font-size:25px;
     color:white;
@@ -161,6 +181,7 @@ span{
 
 .about{
     display:flex;
+    min-height:100vh;
     justify-content: center;
     align-items: center;
     padding:12% 8%;
@@ -197,6 +218,7 @@ span{
 .exptitle{
     text-align: center;
     font-size:62px;
+    margin-top:60px;
     margin-bottom:90px;
 }
 
@@ -257,6 +279,7 @@ span{
 
 .project{
     align-items: center;
+    min-height:100vh;
     padding:12% 8%;
     gap: 10em;
     background: black;
@@ -331,8 +354,7 @@ span{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin: 200px;
-    border-radius:30px;
+    min-height:80vh;
     gap: 10em;
     background: orangered;
 }
@@ -355,23 +377,27 @@ span{
     height:120px;
 }
 
-.skills:hover{
+.skill:hover{
     transform: scale(1.05);
     box-shadow: 0 0 10px orangered;
     cursor:pointer;
 }
 
+.contact-form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
 .contact-form h2{
-    text-align: center;
-    margin-top: 3em;
-    margin-bottom: 1em;
     font-size: 36px;
+    margin-top:150px
 }
 .contact-form form{
     max-width:50em;
-    margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom:150px
 }
 
 .contact-form form .input-box input, 
@@ -382,7 +408,7 @@ span{
     color: black;
     background: rgba(241, 241, 241);
     border-radius: .8rem;
-    margin: 1rem 0;
+    margin:2px;
     resize: none;
 }
 
@@ -453,6 +479,324 @@ span{
     color:white;
 }
 
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+@media (max-width: 1880px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .home {
+        gap: 4em;
+        padding: 30px 5% 0;
+    }
+
+    .img-box img {
+        width: 400px;
+    }
+
+    .experiencebox,
+    .projectbox {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1679px) {
+
+ .header {
+        padding: 25px 8%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar a {
+        margin: 0 15px;
+        font-size: 17px;
+    }
+
+    .home {
+        gap: 5em;
+        padding: 30px 8% 0;
+    }
+
+    .home-content h1 {
+        font-size: 54px;
+    }
+
+    .home-content h3 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 17px;
+    }
+
+    .img-box img {
+        width: 420px;
+    }
+
+    .about {
+        padding: 8% 6%;
+        gap: 6em;
+    }
+
+    .about-content h2 {
+        font-size: 54px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .experience {
+        padding: 70px;
+    }
+
+    .exptitle,
+    .projecttitle {
+        font-size: 54px;
+        margin-bottom: 70px;
+    }
+
+    .experience-content,
+    .project-content {
+        gap: 60px;
+    }
+
+    .experiencebox,
+    .projectbox {
+        max-width: 700px;
+        height: auto;
+    }
+
+    .skills {
+        margin: 120px 60px;
+        padding: 60px 20px;
+        gap: 5em;
+    }
+
+    .skills h2 {
+        font-size: 42px;
+    }
+
+    .skill {
+        width: 100%;
+        max-width: 750px;
+        gap: 25px;
+    }
+
+    .image1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-form h2 {
+        font-size: 32px;
+    }
+
+    .footer ul li a {
+        font-size: 16px;
+    }
+}
 
 
+@media (max-width: 1599px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
 
+    .burger{
+        display:block;
+    }
+
+    .nav-container{
+    display:contents;
+}
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        z-index: 10px;
+        padding-right: 20px;
+    }
+
+    .navbar.show{
+        display:flex;
+    }
+
+    .contact {
+        display:none;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 3em;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+        margin-top: 140px;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .exptitle,
+    .projecttitle {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .experience{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .experience-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .experiencebox{
+        width:auto;
+    }
+
+    .project-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .projectbox{
+        width: auto;
+    }
+
+    .skills {
+        margin: 50px 20px;
+        padding: 30px 10px;
+    }
+
+    .skills h2 {
+        font-size: 32px;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .image1 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-form form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .experiencebox h3 {
+        font-size: 22px;
+    }
+
+    .experiencebox h2 {
+        font-size: 18px;
+    }
+
+    .experiencebox p {
+        font-size: 14px;
+    }
+
+    .projectbox h3 {
+        font-size: 20px;
+    }
+
+    .projectbox p {
+        font-size: 14px;
+    }
+
+    .footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
